@@ -1,0 +1,115 @@
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+Invalid character (-) encountered while parsing (tag "CFSET" with attributes _remaining_width=Int((1200). 
+Invalid character (-) encountered while parsing (tag "CFSET" with attributes _remaining_width=Int((1200). 
+Invalid character (-) encountered while parsing (tag "CFSET" with attributes _remaining_width=Int((1500). 
+Invalid character (-) encountered while parsing (tag "CFSET" with attributes _remaining_width=Int((1500). 
+Invalid quoted string 'form.myReportType' encountered while parsing (tag "CFIF" with attributes). 
+Invalid quoted string 'form.myReportType' encountered while parsing (tag "CFIF" with attributes). 
+Invalid quoted string 'form.myReportType' encountered while parsing (tag "CFIF" with attributes). 
+Invalid quoted string 'form.myReportType' encountered while parsing (tag "CFIF" with attributes). 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+Invalid quoted string '(Shipments Detail)' encountered while parsing (tag "CFIF" with attributes (LCASE(repName)= EQ=). 
+Invalid quoted string '(Shipments Detail)' encountered while parsing (tag "CFIF" with attributes (LCASE(repName)= EQ=). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(CGI.HTTP_REFERER)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(Trim(noton2))=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(Trim(noton2))=). 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+Invalid character (,) encountered while parsing (tag "CFINPUT" with attributes type=Checkbox name=bool_aggregate label=Aggregate as One (only one Report Type at a time) value=Yes visible=Yes enabled=#ListLen(_myReportType, ). 
+Invalid character (,) encountered while parsing (tag "CFINPUT" with attributes type=Checkbox name=bool_aggregate label=Aggregate as One (only one Report Type at a time) value=Yes visible=Yes enabled=#ListLen(_myReportType, ). 
+Invalid character ([) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character ([) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (,) encountered while parsing (tag "CFINPUT" with attributes type=Checkbox name=bool_aggregate label=Aggregate the Whole Grid as One Report (only one Report Type at a time) value=Yes visible=Yes enabled=#(ListLen(_myReportType, ). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(Trim(noton2))=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(Trim(noton2))=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(Trim(noton2))=). 
+Invalid character (,) encountered while parsing (tag "CFINPUT" with attributes type=Checkbox name=bool_aggregate label=Aggregate the Whole Grid as One Report for View Excel and View Raw Data (only one Report Type at a time) value=Yes visible=#(ListLen(_myReportType, ). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid quoted string 'WHERE' encountered while parsing (tag "CFIF" with attributes). 
+Invalid quoted string 'WHERE' encountered while parsing (tag "CFSET" with attributes _where_clause=ReplaceNoCase(_where_clause,). 
+Invalid quoted string 'WHERE ' encountered while parsing (tag "CFSET" with attributes _where_clause=ReplaceNoCase(_where_clause,). 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+End of file encountered while parsing comment. 
+Invalid equal sign (=) encountered while parsing (tag "CFSET" with attributes). 
+Invalid quoted string '), GetToken(CGI.SCRIPT_NAME, 1, ' encountered while parsing (tag "A" with attributes href= onClick=DHTMLWindowsObj.loadwindow(aDHTMLObj1.id,'#Request.commonCode.fullyQualifiedServerName()##ReplaceNoCase(ReplaceNoCase(CGI.SCRIPT_NAME, GetToken(CGI.SCRIPT_NAME, 1, ). 
+Invalid quoted string '), GetToken(CGI.SCRIPT_NAME, 1, ' encountered while parsing (tag "A" with attributes href= onClick=DHTMLWindowsObj.loadwindow(aDHTMLObj1.id,'#Request.commonCode.fullyQualifiedServerName()##ReplaceNoCase(ReplaceNoCase(CGI.SCRIPT_NAME, GetToken(CGI.SCRIPT_NAME, 1, ). 
+Invalid quoted string 'Request.cfinclude_application_loaded' encountered while parsing (tag "CFIF" with attributes (NOT=). 
+Invalid quoted string 'Request.cfinclude_application_loaded' encountered while parsing (tag "CFIF" with attributes (NOT=). 
+Invalid quoted string 'Request.cfinclude_application_loaded' encountered while parsing (tag "CFIF" with attributes (NOT=). 

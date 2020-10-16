@@ -1,0 +1,25 @@
+Testing...
+Testing... {ts '2005-06-29 07:42:54'}
+Testing... {ts '2005-06-29 07:43:20'}
+Testing... {ts '2005-06-29 07:43:33'}
+Testing... {ts '2005-06-29 07:44:24'}
+Testing... June 29 of 2005 07:06:52 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 07:06:52 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 07:06:22 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 07:06:54 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 07:06:01 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:01 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:09 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:08 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:30 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:02 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:37 [mmmm dd of yyyy hh:mm:ss]
+Testing... June 29 of 2005 08:06:23 [mmmm dd of yyyy hh:mm:ss] [20050628.215648.1120021008614]
+Testing... June 29 of 2005 08:06:45 [mmmm dd of yyyy hh:mm:ss] [undefined]
+Testing... June 29 of 2005 08:06:52 [mmmm dd of yyyy hh:mm:ss] [20050628.215648.1120021008614]
+Testing... June 29 of 2005 08:06:56 [mmmm dd of yyyy hh:mm:ss] [20050628.215648.1120021008614]
+Testing... {ts '2005-06-29 08:48:01'} [] []
+Testing... {ts '2005-06-29 08:49:57'} [] [] []
+Testing... {ts '2005-06-29 08:49:59'} [] [] []
+Testing... {ts '2005-06-29 08:50:01'} [] [] []
+Testing... {ts '2005-06-29 08:55:31'} [] [] [] [-1]

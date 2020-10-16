@@ -1,0 +1,8 @@
+Invalid character (&) encountered while parsing (tag "CFSET" with attributes variables._url=Request.commonCode.fullyQualifiedServerName()). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (,) encountered while parsing (tag "CFIF" with attributes). 
+Invalid character (-) encountered while parsing (tag "CFSET" with attributes variables._url=Left(variables._url,). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(_userName_)=). 
+Invalid number "0" encountered while parsing (tag "CFIF" with attributes (Len(_userName_)=). 

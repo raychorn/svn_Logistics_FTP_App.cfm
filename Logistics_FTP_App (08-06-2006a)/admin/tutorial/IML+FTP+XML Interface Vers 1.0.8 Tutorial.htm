@@ -1,0 +1,498 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>User Authentication Tutorial:</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>rhorn</o:Author>
+  <o:LastAuthor>rhorn</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2005-11-01T17:41:00Z</o:Created>
+  <o:LastSaved>2005-11-01T17:41:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>784</o:Words>
+  <o:Characters>4471</o:Characters>
+  <o:Company>redacted Inc.</o:Company>
+  <o:Lines>37</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5245</o:CharactersWithSpaces>
+  <o:Version>11.6568</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>User
+Authentication Tutorial:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>This
+is the initial prompt the users will see when entering the IML/FTP/XML
+Interface Version 1.0.8 for the first time after Friday 10-28-2005.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Do
+NOT be <span class=GramE>alarmed !</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Any
+user who wishes to have a user account for this application can easily obtain
+one WITHOUT the need to go through the I.T. Dept.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="" style='width:588.75pt;
+ height:155.25pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image001.jpg"
+  o:href="cid:image001.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=785 height=207
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image001.jpg"
+v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>First,
+choose the link called “register for a new user account” as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" alt="" style='width:589.5pt;height:150pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image002.jpg"
+  o:href="cid:image002.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=786 height=200
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image002.jpg"
+v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Then
+click on this link and proceed to the next step in the process.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" alt="" style='width:585pt;height:183.75pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image003.jpg"
+  o:href="cid:image003.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=780 height=245
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image003.jpg"
+v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this point you will want to enter your redacted email address along with a
+Secret Prompt and Secret Response as shown below:&nbsp; (The Secret Prompt and
+Secret Response should be something that means something to you personally and
+can be anything you desire.&nbsp; Keep in mind the Secret Prompt and Secret
+Response are both stored in the database in an encrypted tamper-proof manner
+however others may be able to view your Secret Prompt while using the system
+such as whenever someone attempts to use another person’s email address when
+attempting to log-in.)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" alt="" style='width:589.5pt;height:189pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image004.jpg"
+  o:href="cid:image004.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=786 height=252
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image004.jpg"
+v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Click
+the [Submit] button to proceed to the next step in the process.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this point, as shown below, your new user account has been established in the
+database however you will need to <span class=GramE>Activate</span> your new
+account.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" alt="" style='width:630pt;height:197.25pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image005.jpg"
+  o:href="cid:image005.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=840 height=263
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image005.jpg"
+v:shapes="_x0000_i1029"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>New
+User Account Activation is performed via the email you will receive that has a
+link (as shown below) which you will click on to Activate your new user
+account.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>This
+New User Account Activation process ensures that nobody but you can spoof the
+system into thinking they are you when in fact only you are you.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>The
+only time you will ever need to contact the I.T. Dept is in the event that you
+don’t receive the email.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" alt="" style='width:420.75pt;height:121.5pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image006.jpg"
+  o:href="cid:image006.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=561 height=162
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image006.jpg"
+v:shapes="_x0000_i1030"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this time you should click on the link as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" alt="" style='width:419.25pt;height:127.5pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image007.jpg"
+  o:href="cid:image007.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=559 height=170
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image007.jpg"
+v:shapes="_x0000_i1031"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>And
+then you will see the following pop-up in a browser window:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" alt="" style='width:654.75pt;height:43.5pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image008.jpg"
+  o:href="cid:image008.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=873 height=58
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image008.jpg"
+v:shapes="_x0000_i1032"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Your
+password will be emailed to you at this time.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this time you should return to the IML/FTP/XML Interface Version 1.0.8 home
+page where you will see the following:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" alt="" style='width:575.25pt;height:138pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image009.jpg"
+  o:href="cid:image009.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=767 height=184
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image009.jpg"
+v:shapes="_x0000_i1033"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this time you may login to begin working OR you may have your password reset.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>There
+are two ways to get your password reset once your new user account has been
+activated.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Notice
+the link labeled “forgot your password” – this link is used whenever you forgot
+your password and you wish to have a new password issued by the system.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" alt="" style='width:570.75pt;height:138pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image010.jpg"
+  o:href="cid:image010.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=761 height=184
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image010.jpg"
+v:shapes="_x0000_i1034"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Go
+ahead and click this link now, nothing bad will happen.&nbsp; In fact you may
+click this link as often as you wish and the system will cheerfully issue you a
+new password each time you click on this link as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" alt="" style='width:582pt;height:95.25pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image011.jpg"
+  o:href="cid:image011.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=776 height=127
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image011.jpg"
+v:shapes="_x0000_i1035"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this point you should enter your redacted email address as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" alt="" style='width:579.75pt;height:192pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image012.jpg"
+  o:href="cid:image012.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=773 height=256
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image012.jpg"
+v:shapes="_x0000_i1036"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Notice
+that the Secret Prompt you entered before is shown to you again here.&nbsp;
+This is how the system knows that you are really who you say you are because
+only YOU know the correct Secret response to enter.&nbsp; I’ll enter mine so we
+can proceed with this Tutorial as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" alt="" style='width:8in;height:171pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image013.jpg"
+  o:href="cid:image013.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=768 height=228
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image013.jpg"
+v:shapes="_x0000_i1037"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this time your new password has been sent to your email address so you can
+log-in and resume working.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>But
+what happens if you just don’t like the password the system gave <span
+class=GramE>you ?&nbsp;</span> No problem, you can change your system generated
+password for one you like better, as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" alt="" style='width:570pt;height:141pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image014.jpg"
+  o:href="cid:image014.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=760 height=188
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image014.jpg"
+v:shapes="_x0000_i1038"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Click
+on the link labeled “change your password” to begin the process of changing
+your password as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" alt="" style='width:589.5pt;height:132.75pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image015.jpg"
+  o:href="cid:image015.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=786 height=177
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image015.jpg"
+v:shapes="_x0000_i1039"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this point you should enter your redacted email address and your old and new
+password and then click the [Submit] button to proceed.&nbsp; I have done this
+as shown below to demonstrate:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" alt="" style='width:579pt;height:233.25pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image016.jpg"
+  o:href="cid:image016.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=772 height=311
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image016.jpg"
+v:shapes="_x0000_i1040"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this point you should enter the Secret Response for the Secret Prompt and then
+click the [Submit] button as shown below:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" alt="" style='width:581.25pt;height:211.5pt'>
+ <v:imagedata src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image017.jpg"
+  o:href="cid:image017.jpg@01C5DEBA.F571B3C0"/>
+</v:shape><![endif]--><![if !vml]><img width=775 height=282
+src="IML+FTP+XML%20Interface%20Vers%201.0.8%20Tutorial_files/image017.jpg"
+v:shapes="_x0000_i1041"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>At
+this point you will receive an email with the new password you just entered as
+a reminder and confirmation of the password you wanted your new password to be.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Verdana;color:blue'>Keep
+in mind that you can, at any time, choose to have a system generated password
+issued in place of any password simply by using the Forgot Password procedure
+as shown above.<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

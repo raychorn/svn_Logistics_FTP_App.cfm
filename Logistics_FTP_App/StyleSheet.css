@@ -1,0 +1,60 @@
+/* StyleSheet.css */
+BODY {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	color: black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+}
+
+.instructionsClass {
+	font-size: 10px;
+	text-align: justify;
+}
+
+.buttonClass {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.errorStatusClass {
+	font-size: 10px;
+	color: red;
+}
+
+.errorStatusBoldClass {
+	font-size: 10px;
+	color: red;
+	font-weight: bold;
+}
+
+.onholdStatusClass {
+	font-size: 10px;
+	color: green;
+}
+
+.normalStatusClass {
+	font-size: 10px;
+	color: blue;
+}
+
+.normalStatusBoldClass {
+	font-size: 10px;
+	color: blue;
+	font-weight: bold;
+}
+
+.textClass {
+	font-size: 10px;
+}
+
+.workingStatusClass {
+	font-size: 10px;
+	color: black;
+	font-weight: bold;
+}
+
+.paperBgColorClass {
+	background-color : #FFFACD;
+}
